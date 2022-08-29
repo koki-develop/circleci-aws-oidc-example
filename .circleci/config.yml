@@ -1,0 +1,13 @@
+version: 2.1
+
+jobs:
+  build:
+    machine:
+      image: ubuntu-2004:current
+    steps:
+      - run: echo hello
+
+workflows:
+  build:
+    jobs:
+      - build
